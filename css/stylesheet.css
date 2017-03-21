@@ -1,5 +1,26 @@
+body {
+	background-color: #F6F6F6;
+	font-family: 'Playfair Display', serif;
+	font-size: 16px;
+}
+
 header {
 	text-align: center;
+}
+
+h2 {
+	margin-bottom: 20px;
+	text-transform: uppercase;
+}
+
+h3 {
+	font-size: 1.5em;
+	margin: 10px;
+	text-transform: uppercase;
+}
+
+.padding0 {
+	padding: 0;
 }
 
 .navbar {
@@ -13,4 +34,60 @@ header {
 .navbar li {
 	margin-left: 5%;
 	margin-right: 5%;
+}
+
+.headline {
+	border-bottom: 1px solid #ccc;
+	padding: 15px 0 35px 0;
+	text-align: center;
+}
+
+.headline img {
+	height: 332px;
+	width: 628px;
+}
+
+.headline .origin {
+	color: #b84445;
+	font-size: 0.8em;
+	margin-bottom: 0;
+}
+
+.headline .author {
+	margin-bottom: 30px;
+}
+
+.articles {
+	border-bottom: 1px solid #ccc;
+	margin-top: 30px;
+	text-align: center;
+}
+
+.articles img {
+	height: auto;
+	width: 230px;
+}
+
+.articles .origin {
+	color: #b84445;
+	font-size: 0.8em;
+	margin-bottom: 0;
+}
+
+.articles .author {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+}
+
+.articles .content {
+	font-size: 0.9em;
+}
+
+.articles .figbox {
+	margin-bottom: 30px;
+	padding: 30px;
+}
+
+.articles .figbox:not(:last-child) {
+	border-right: 1px solid #ccc;
 }

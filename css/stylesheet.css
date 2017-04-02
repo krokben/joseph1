@@ -134,6 +134,11 @@ figcaption span {
 	margin-right: 5%;
 }
 
+.navbar li:nth-child(2) {
+	animation: pulse 1s ease-out;
+	animation-iteration-count: infinite;
+}
+
 .navbar li a:hover {
 	background: none;
 	color: #999;
@@ -339,6 +344,10 @@ figcaption span {
 	text-align: center;
 }
 
+.article-figure img {
+	max-width: 300px;
+}
+
 .article-figure p {
 	text-align: center;
 }
@@ -360,6 +369,13 @@ figcaption span {
 
 .article i {
 	color: DeepSkyBlue;
+}
+
+.article .author {
+	font-size: 0.8em;
+	margin-bottom: 10px;
+	margin-top: -20px;
+	text-align: center;
 }
 
 /* Network */
@@ -406,6 +422,17 @@ figcaption span {
 	font-size: 0.7em;
 	margin: 0;
 }
+
+/* Keyframes */
+
+@keyframes pulse {
+	0% {transform: scale(1);}
+	25% {transform: scale(1.05); }
+	50% {transform: scale(1.1); }
+	75% {transform: scale(1.1); }
+	100% {transform: scale(1.05);}
+}
+
 
 /* Media queries */
 

@@ -49,6 +49,13 @@ figcaption span {
 	padding-left: 80px;
 }
 
+.hr {
+	background: #ccc;
+	height: 1px;
+	margin: 0 0 40px 0;
+	width: 100%;
+}
+
 /* Carousel */
 .item {
 	margin-bottom: 40px;
@@ -56,13 +63,21 @@ figcaption span {
 	text-align: center;
 }
 
+.item img {
+	height: auto;
+	width: 500px;
+}
+
 .carousel-caption {
-	bottom: -10px;
-	padding: 0;
+	bottom: -20px;
+	padding: 0 0 25px 0;
 }
 
 .carousel-caption p {
 	color: #000;
+	display: inline;
+	font-size: 0.65em;
+	text-decoration: italic;
 	text-shadow: none;
 }
 
@@ -88,7 +103,7 @@ figcaption span {
 .carousel-footer {
 	border-top: 1px solid #ccc;
 	margin-top: 10px;
-	padding: 40px 0 0 0;
+	padding: 0;
 	text-align: center;
 }
 
@@ -117,6 +132,12 @@ figcaption span {
 .navbar li {
 	margin-left: 5%;
 	margin-right: 5%;
+}
+
+.navbar li a:hover {
+	background: none;
+	color: #999;
+	cursor: pointer;
 }
 
 .icon-bar {
@@ -159,6 +180,12 @@ figcaption span {
 	margin-right: 5%;
 }
 
+.footer li a:hover {
+	background: none;
+	color: #999;
+	cursor: pointer;
+}
+
 .copyright {
 	border-top: 1px solid #ccc;
 	color: #999;
@@ -188,7 +215,7 @@ figcaption span {
 
 .headline img {
 	height: auto;
-	width: 50vw;
+	width: 40vw;
 }
 
 .headline .origin {
@@ -302,6 +329,7 @@ figcaption span {
 	float: left;
 	margin-right: 45px;
 	max-width: 300px;
+	text-align: center;
 }
 
 .article-figure p {
@@ -310,6 +338,8 @@ figcaption span {
 
 .article {
 	border-bottom: 1px solid #ccc;
+	padding-bottom: 40px;
+	padding-top: 40px;
 }
 
 .article h2 {
@@ -317,9 +347,86 @@ figcaption span {
 	text-align: center;
 }
 
+.article a {
+	color: DeepSkyBlue;
+}
+
+.article i {
+	color: DeepSkyBlue;
+}
+
+/* Network */
+
+.network .heading {
+	padding-bottom: 20px;
+}
+
+.network .heading h2 {
+	margin-bottom: 0;
+	text-align: center;
+}
+
+.network .heading p {
+	font-size: 0.7em;
+	text-align: center;
+}
+
+.network .staff {
+	margin-bottom: 40px;
+}
+
+.network .staff:not(:nth-child(3n)) {
+	border-right: 1px solid #ccc;
+}
+
+.network .staff-box {
+	border-bottom: 1px solid #ccc;
+	margin: auto;
+	width: 140px;
+}
+
+.network .staff-box h4 {
+	margin: 0;
+}
+
+.network .staff-box p {
+	font-size: 0.8em;
+	margin: 0;
+}
+
+.network .staff-box a {
+	color: DeepSkyBlue;
+	font-size: 0.7em;
+	margin: 0;
+}
+
+/* Media queries */
+
 @media only screen and (max-width: 456px) {
 	.navbar li:nth-child(2), .footer li:nth-child(2) {
 		display: block;
+	}
+
+	.navbar li {
+		margin-bottom: 10px;
+	}
+
+	.footer li {
+		margin-bottom: 10px;
+	}
+
+	/* Network */
+	.network .staff {
+		border-right: none;
+		width: 100%;
+	}
+
+	.network .staff:not(:nth-child(3n)) {
+		border-right: none; /* reset */
+	}
+
+	.network .staff:not(:nth-child(2n)) {
+		border-right: none; /* reset */
 	}
 }
 
@@ -362,13 +469,14 @@ figcaption span {
 	.navbar footer {
 		border-bottom: none;
 	}
+
 	/* Home */
 	.home-headline-row {
 		padding-top: 20px;
 	}
 
 	.home-headline-row.clean {
-		padding-bottom: 0;
+		// padding-bottom: 0;
 	}
 
 	.home-headline-figure {
@@ -407,6 +515,31 @@ figcaption span {
 	}
 
 	.articles .figbox:first-child {
+		border-right: 1px solid #ccc;
+	}
+
+	.headline img {
+		height: auto;
+		width: 60vw;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.headline img {
+		height: auto;
+		width: 55vw;
+	}
+}
+
+/* Mins and min-max media queries */
+
+@media only screen and (min-width: 457px) and (max-width: 767px) {
+	/* Network */
+	.network .staff:not(:nth-child(3n)) {
+		border-right: none /* reset */
+	}
+
+	.network .staff:not(:nth-child(2n)) {
 		border-right: 1px solid #ccc;
 	}
 }

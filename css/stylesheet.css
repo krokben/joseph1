@@ -245,7 +245,8 @@ figcaption span {
 
 .articles img {
 	height: auto;
-	width: 230px;
+	/*width: 230px;*/
+  height: 173px;
 }
 
 .articles .origin {

@@ -416,6 +416,40 @@ figcaption span {
 	margin: 0;
 }
 
+/* Misc. */
+
+.bubble1 {
+	background-image: url('../img/speechbubble.svg');
+	background-repeat: no-repeat;
+	background-size: 100%;
+	font-size: 0.9em;
+	height: 400px;
+	padding: 60px 80px 0 55px;
+	position: absolute;
+	top: 400px;
+	width: 400px;
+}
+
+.bubble1 p {
+	text-align: center;
+}
+
+.bubble2 {
+	font-size: 0.9em;
+	left: 70%;
+	position: absolute;
+	top: 400px;
+	width: 300px;
+}
+
+.bubble3 {
+	font-size: 0.9em;
+	left: 70%;
+	position: absolute;
+	top: 800px;
+	width: 300px;
+}
+
 /* Keyframes */
 
 @keyframes pulse {

@@ -273,6 +273,11 @@ figcaption span {
   height: 173px;
 }
 
+.articles a:hover {
+	color: #000;
+	cursor: pointer;
+}
+
 .articles .origin {
 	color: #b84445;
 	font-size: 0.8em;

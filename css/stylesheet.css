@@ -13,6 +13,15 @@ header img {
 	width: 510px;
 }
 
+h1 {
+  text-align: center;
+  text-transform: uppercase;
+  font-family: 'Playfair Display SC', serif;
+  margin-top: 40px;
+}
+
+
+
 h2 {
 	font-size: 1.3em;
 	margin-bottom: 20px;
@@ -167,6 +176,9 @@ figcaption span {
   /*float: right!important;*/
 }
 
+
+
+
 /* Footer */
 
 .footer {
@@ -183,11 +195,17 @@ figcaption span {
 .footer li {
 	margin-left: 5%;
 	margin-right: 5%;
+
+}
+
+.footer li a {
+
+    color: #aaa;
 }
 
 .footer li a:hover {
 	background: none;
-	color: #999;
+	color: #666;
 	cursor: pointer;
 }
 
@@ -226,6 +244,7 @@ figcaption span {
 .headline img {
 	height: auto;
 	width: 40vw;
+  max-width: 675px;
 }
 
 .headline .origin {
@@ -274,7 +293,7 @@ figcaption span {
 	padding: 30px;
 }
 
-.articles .figbox:not(:last-child) {
+.articles .figbox:not(:nth-child(3n)) {
 	border-right: 1px solid #ccc;
 }
 
@@ -294,7 +313,7 @@ figcaption span {
 }
 
 .home-headline-figure {
-	padding: 20px 40px 0 0;
+	padding: 40px 40px 0 0;
 	text-align: right;
 }
 
@@ -455,6 +474,13 @@ figcaption span {
 	position: absolute;
 	top: 800px;
 	width: 300px;
+}
+
+.line {
+   background: #ccc;
+   height: 1px;
+   width: 50%;
+   margin: auto;
 }
 
 /* Keyframes */

@@ -218,6 +218,11 @@ figcaption span {
 	text-align: center;
 }
 
+
+.headline-blurb h3 {
+	text-align: center;
+}
+
 .headline img {
 	height: auto;
 	width: 40vw;
@@ -280,6 +285,7 @@ figcaption span {
 .articles .figbox p.content {
 	text-align: justify;
 }
+
 
 .home-headline-row {
 	border-bottom: 1px solid #ccc;

@@ -26,6 +26,7 @@ h2 {
 	font-size: 1.3em;
 	margin-bottom: 20px;
 	text-transform: uppercase;
+	font-weight: bold;
 }
 
 h3 {
@@ -144,13 +145,14 @@ figcaption span {
 }
 
 .navbar li:nth-child(2) {
-	animation: pulse 1s ease-out;
-	animation-iteration-count: infinite;
+	// animation: pulse 1s ease-out;
+	// animation-iteration-count: infinite;
+	text-decoration: underline;
 }
 
 .navbar li a:hover {
-	background: none;
-	color: #999;
+	background: DeepSkyBlue;
+	color: #fff;
 	cursor: pointer;
 }
 
@@ -175,8 +177,6 @@ figcaption span {
 .navbar-right {
   /*float: right!important;*/
 }
-
-
 
 
 /* Footer */
@@ -310,6 +310,7 @@ figcaption span {
 	text-align: justify;
 }
 
+/* Home */
 
 .home-headline-row {
 	border-bottom: 1px solid #ccc;
@@ -357,6 +358,13 @@ figcaption span {
 .home-headline-text h3 {
 	font-size: 1.3em;
 	text-align: center;
+}
+
+.membership {
+	border-bottom: 1px solid #ccc;
+	border-top: 1px solid #ccc;
+	margin-top: 176px;
+	padding: 40px;
 }
 
 /* Article */
@@ -419,17 +427,19 @@ figcaption span {
 }
 
 .network .staff {
-	margin-bottom: 40px;
+	margin-bottom: 10px;
 }
 
 .network .staff:not(:nth-child(3n)) {
-	border-right: 1px solid #ccc;
+	/*border-right: 1px solid #ccc;*/
 }
 
 .network .staff-box {
+	background: #ddd;
 	border-bottom: 1px solid #ccc;
 	margin: auto;
-	width: 140px;
+	padding: 10px;
+	width: 105%;
 }
 
 .network .staff-box h4 {
@@ -447,7 +457,46 @@ figcaption span {
 	margin: 0;
 }
 
+/* Contact */
+
+.contact-form {
+	padding-left: 0;
+	padding-right: 30px;
+}
+
+.form-group .form-control {
+	/*border-radius: 0;*/
+}
+
+.form-group button {
+	float: right;
+	width: 100px;
+}
+
+.messagebox {
+	height: 300px !important;
+}
+
+legend {
+	font-size: 1.8em;
+	text-align: center;
+}
+
+legend p {
+	font-size: 0.5em;
+	text-align: center;
+}
+
 /* Misc. */
+
+.vertical-text {
+	font-size: 0.7em;
+	right: 40px;
+	top: 300px;
+	position: absolute;
+	transform: rotate(270deg);
+	transform-origin: right top 0;
+}
 
 .bubble1 {
 	background-image: url('../img/speechbubble.svg');
@@ -601,6 +650,11 @@ figcaption span {
 		border-left: none;
 		padding-left: 0;
 	}
+
+	/* Contact */
+	.contact-form {
+		padding-right: 0;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -639,7 +693,7 @@ figcaption span {
 	}
 
 	.network .staff:not(:nth-child(2n)) {
-		border-right: 1px solid #ccc;
+		/*border-right: 1px solid #ccc;*/
 	}
 }
 

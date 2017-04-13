@@ -24,16 +24,18 @@ h1 {
 
 
 h2 {
-	font-size: 1.3em;
+	font-size: 1.7em;
 	margin-bottom: 20px;
-	text-transform: uppercase;
+	text-transform: capitalize;
+	font-variant: small-caps;
 	font-weight: bold;
 }
 
 h3 {
-	font-size: 1.5em;
+	font-size: 1.7em;
 	margin: 10px;
-	text-transform: uppercase;
+	text-transform: capitalize;
+	font-variant: small-caps;
 	font-weight: bold;
 }
 
@@ -49,6 +51,7 @@ width: 60%;
 
 a {
 	color: #000;
+	cursor: pointer;
 	padding: 0 	!important;
 }
 
@@ -414,9 +417,12 @@ figcaption span {
 .article a {
 	color: cornflowerblue;
 }
+.article a:hover {
+	color: #000;
+}
 
 .article i {
-	color: DeepSkyBlue;
+	color: cornflowerblue;
 }
 
 .article .author {
@@ -460,6 +466,7 @@ figcaption span {
 
 .network .staff-box h4 {
 	margin: 0;
+	text-align: left;
 }
 
 .network .staff-box p {
@@ -505,6 +512,10 @@ legend p {
 
 /* Misc. */
 
+.active {
+	color: cornflowerblue;
+}
+
 .vertical-text {
 	font-size: 0.7em;
 	right: 40px;
@@ -520,9 +531,10 @@ legend p {
 	background-size: 100%;
 	font-size: 0.9em;
 	height: 400px;
+	left: 116px;
 	padding: 60px 80px 0 55px;
 	position: absolute;
-	top: 400px;
+	top: 300px;
 	width: 400px;
 }
 

@@ -33,7 +33,7 @@
 			      	<li><a href="index.html">HEM</a></li>
 			      	<li><a href="news.html">HEDERSNYTT</a></li>
 			      	<li><a href="network.html">NÄTVERK</a></li>
-			      	<li><a href="contact.html">KONTAKT</a></li>
+			      	<li><a class="active" href="contact.html">KONTAKT</a></li>
 			      </ul>
 			    </div>
 			  </div> <!-- close the container tag -->
@@ -41,7 +41,7 @@
 		</div>
 
 		<div class="container contact-form">
-			<form class="well form-horizontal" action=" " method="post"  id="contact_form">
+			<form class="well form-horizontal" action="php/message.php" method="post"  id="contact_form">
 			<fieldset>
 
 			<!-- Form Name -->
@@ -57,7 +57,7 @@
 			  <div class="col-md-4 inputGroupContainer">
 			  <div class="input-group">
 			  <span class="input-group-addon"><i class="glyphicon glyphicon-user"></i></span>
-			  <input  name="first_name" placeholder="Namn" class="form-control"  type="text">
+			  <input  name="name" placeholder="Namn" class="form-control"  type="text">
 			    </div>
 			  </div>
 			</div>
@@ -80,7 +80,7 @@
 			    <div class="col-md-4 inputGroupContainer">
 			    <div class="input-group">
 			        <span class="input-group-addon"><i class="glyphicon glyphicon-pencil"></i></span>
-			        	<textarea class="form-control messagebox" name="comment" placeholder="Meddelande"></textarea>
+			        	<textarea class="form-control messagebox" name="message" placeholder="Meddelande"></textarea>
 			  </div>
 			  </div>
 			</div>

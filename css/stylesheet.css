@@ -527,20 +527,21 @@ legend p {
 }
 
 .bubble1 {
-	background-image: url('../img/speechbubble.svg');
+
 	background-repeat: no-repeat;
 	background-size: 100%;
 	font-size: 0.9em;
 	height: 400px;
-	left: 116px;
+	left: 680px;
 	padding: 60px 80px 0 55px;
 	position: absolute;
-	top: 300px;
+	top: 305px;
 	width: 400px;
 }
 
 .bubble1 p {
 	text-align: center;
+	font-weight: bold;
 }
 
 .bubble2 {
@@ -549,6 +550,7 @@ legend p {
 	position: absolute;
 	top: 420px;
 	width: 300px;
+	font-weight: bold;
 }
 
 .bubble3 {
@@ -557,6 +559,7 @@ legend p {
 	position: absolute;
 	top: 800px;
 	width: 300px;
+	font-weight: bold;
 }
 
 .line {

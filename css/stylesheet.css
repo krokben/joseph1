@@ -103,6 +103,7 @@ figcaption span {
 	display: inline;
 	font-size: 0.65em;
 	text-decoration: italic;
+	font-weight: bold;
 	text-shadow: none;
 }
 

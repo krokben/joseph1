@@ -68,10 +68,17 @@ figcaption {
 figcaption p {
 	font-style: italic;
 	text-align: center;
+  font-weight: bold;
 }
 
 figcaption span {
 	padding-left: 80px;
+  font-weight: bold;
+}
+
+a .readMore  {
+  color: cornflowerblue;
+  font-weight: bold;
 }
 
 .hr {
@@ -136,7 +143,7 @@ figcaption span {
 /* Navbar */
 
 .navbar {
-	border-bottom: 1px solid #ACACAC;
+	border-bottom: 1px solid ACACAC;
 	/*display: table-cell;*/
 	padding: 40px 0 6px 0;
   vertical-align: bottom;

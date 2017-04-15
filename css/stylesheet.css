@@ -4,16 +4,6 @@ body {
 	font-size: 16px;
 }
 
-header {
-	text-align: center;
-  margin-top: 8px;
-}
-
-header img {
-	height: auto;
-	width: 510px;
-}
-
 h1 {
   text-align: center;
   text-transform: uppercase;
@@ -86,6 +76,25 @@ a#readMore  {
 	height: 1px;
 	margin: 0 0 40px 0;
 	width: 100%;
+}
+
+/* Header */
+header {
+	text-align: center;
+}
+
+header img {
+	height: auto;
+	width: 510px;
+}
+
+header .flags {
+	float: right;
+}
+
+header .flags img {
+	height: auto;
+	width: 20px;
 }
 
 /* Carousel */
@@ -520,6 +529,14 @@ legend p {
 
 /* Misc. */
 
+.ambetsmannen {
+	padding-top: 100px;
+}
+
+.ambetsmannen a {
+	color: cornflowerblue;
+}
+
 .active {
 	color: cornflowerblue;
 }
@@ -531,42 +548,6 @@ legend p {
 	position: absolute;
 	transform: rotate(270deg);
 	transform-origin: right top 0;
-}
-
-.bubble1 {
-
-	background-repeat: no-repeat;
-	background-size: 100%;
-	font-size: 0.9em;
-	height: 400px;
-	left: 680px;
-	padding: 60px 80px 0 55px;
-	position: absolute;
-	top: 305px;
-	width: 400px;
-}
-
-.bubble1 p {
-	text-align: center;
-	font-weight: bold;
-}
-
-.bubble2 {
-	font-size: 0.9em;
-	left: 70%;
-	position: absolute;
-	top: 420px;
-	width: 300px;
-	font-weight: bold;
-}
-
-.bubble3 {
-	font-size: 0.9em;
-	left: 70%;
-	position: absolute;
-	top: 800px;
-	width: 300px;
-	font-weight: bold;
 }
 
 .line {
@@ -694,6 +675,10 @@ legend p {
 	.contact-form {
 		padding-right: 0;
 	}
+
+	.ambetsmannen {
+		padding-top: 0;
+	}
 }
 
 @media only screen and (max-width: 991px) {
@@ -723,6 +708,12 @@ legend p {
 	}
 }
 
+@media only screen and (max-width: 1200px) {
+	.ambetet img {
+		width: 100%;
+	}
+}
+
 /* Mins and min-max media queries */
 
 @media only screen and (min-width: 457px) and (max-width: 767px) {
@@ -743,10 +734,12 @@ legend p {
 }
 
 @media only screen and (min-width: 776px) and (max-width: 991px) {
-
 	.navbar li {
-margin-left: 5%;
-margin-right: 5%;
+		margin-left: 5%;
+		margin-right: 5%;
+	}
 
+	.ambetsmannen {
+		padding-top: 40px;
 	}
 }

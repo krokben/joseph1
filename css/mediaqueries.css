@@ -1,0 +1,190 @@
+/* Media queries */
+
+@media only screen and (max-width: 456px) {
+	.navbar li:nth-child(2), .footer li:nth-child(2) {
+		display: block;
+	}
+
+	.navbar li {
+		margin-bottom: 10px;
+	}
+
+	.footer li {
+		margin-bottom: 10px;
+	}
+
+	/* Network */
+	.network .staff {
+		border-right: none;
+		width: 100%;
+	}
+
+	.network .staff:not(:nth-child(3n)) {
+		border-right: none; /* reset */
+	}
+
+	.network .staff:not(:nth-child(2n)) {
+		border-right: none; /* reset */
+	}
+}
+
+@media only screen and (max-width: 540px) {
+	.figbox {
+		border-bottom: 1px solid #ccc;
+		width: 100%;
+	}
+
+	.articles {
+		border-bottom: none;
+		margin-top: 0;
+	}
+}
+
+@media only screen and (max-width: 767px) {
+  header img {
+  		height: auto;
+      width: 100%;
+  }
+
+  figcaption {
+  	margin-bottom: 40px;
+  }
+
+  .vertical-text {
+  	display: none;
+  }
+
+  .navbar {
+  	/*display: block;*/
+  }
+
+  .navbar li, .footer li {
+		margin-left: 3.5%;
+		margin-right: 3.5%;
+	}
+
+	.article-figure {
+		float: none;
+		margin: auto;
+	}
+
+	.navbar footer {
+		border-bottom: none;
+	}
+
+	/* Home */
+	.home-headline-row {
+		padding-top: 20px;
+	}
+
+	.home-headline-row.clean {
+		// padding-bottom: 0;
+	}
+
+	.home-headline-figure {
+		padding-top: 0;
+		text-align: center;
+	}
+
+	.home-headline-figure img {
+		width: auto;
+	}
+
+	.home-headline-figure span {
+		padding-left: 0;
+	}
+
+	.home-headline-figure.right {
+		border-left: none;
+		padding-bottom: 0;
+		padding-left: 0;
+	}
+
+	.home-headline-text {
+		border-left: none;
+		padding-left: 0;
+	}
+
+	/* Contact */
+	.contact-form {
+		padding-right: 0;
+	}
+
+	.ambetsmannen {
+		padding-top: 0;
+	}
+}
+
+@media only screen and (max-width: 991px) {
+	.origin {
+		margin-top: 20px;
+	}
+
+	/* News */
+	.articles .figbox:not(:last-child) {
+		border-right: none;
+	}
+
+	.articles .figbox:first-child {
+		border-right: 1px solid #ccc;
+	}
+
+	.headline img {
+		height: auto;
+		width: 60vw;
+	}
+}
+
+@media only screen and (max-width: 1100px) {
+	.headline img {
+		height: auto;
+		width: 55vw;
+	}
+}
+
+@media only screen and (max-width: 1200px) {
+	.ambetet img {
+		width: 100%;
+	}
+}
+
+/* Mins and min-max media queries */
+
+@media only screen and (min-width: 457px) and (max-width: 767px) {
+	/* Network */
+	.network .staff:not(:nth-child(3n)) {
+		border-right: none /* reset */
+	}
+
+	.network .staff:not(:nth-child(2n)) {
+		/*border-right: 1px solid #ccc;*/
+	}
+}
+
+@media only screen and (min-width: 768px) {
+	.padding-right {
+		padding-right: 40px !important;
+	}
+}
+
+@media only screen and (min-width: 768px) and (max-width: 991px) {
+	.navbar li {
+		margin-left: 5%;
+		margin-right: 5%;
+	}
+
+	.ambetsmannen {
+		padding-top: 40px;
+	}
+
+	.vertical-text {
+		top: 110px;
+	}
+}
+
+@media only screen and (min-width: 991px) and (max-width: 1200px) {
+	.vertical-text {
+		top: 210px;
+	}
+}
+}
